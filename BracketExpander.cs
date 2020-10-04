@@ -14,5 +14,17 @@ namespace Maths_Toolkit
         {
             InitializeComponent();
         }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            var _menu = new Menu();
+            _menu.Show();
+            this.Close();
+        }
+
+        private void btnExpand_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
