@@ -32,14 +32,14 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.btnMenu = new System.Windows.Forms.Button();
             this.btnExpand = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
+            this.txtconst1 = new System.Windows.Forms.RichTextBox();
+            this.txtcoeff2 = new System.Windows.Forms.RichTextBox();
+            this.txtcoeff1 = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
+            this.txtconst2 = new System.Windows.Forms.RichTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -83,35 +83,35 @@
             this.btnExpand.UseVisualStyleBackColor = false;
             this.btnExpand.Click += new System.EventHandler(this.btnExpand_Click);
             // 
-            // richTextBox1
+            // txtconst1
             // 
-            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
-            this.richTextBox1.Location = new System.Drawing.Point(390, 191);
-            this.richTextBox1.MaxLength = 2;
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(48, 50);
-            this.richTextBox1.TabIndex = 3;
-            this.richTextBox1.Text = "";
+            this.txtconst1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
+            this.txtconst1.Location = new System.Drawing.Point(390, 191);
+            this.txtconst1.MaxLength = 2;
+            this.txtconst1.Name = "txtconst1";
+            this.txtconst1.Size = new System.Drawing.Size(48, 50);
+            this.txtconst1.TabIndex = 3;
+            this.txtconst1.Text = "";
             // 
-            // richTextBox2
+            // txtcoeff2
             // 
-            this.richTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
-            this.richTextBox2.Location = new System.Drawing.Point(522, 195);
-            this.richTextBox2.MaxLength = 1;
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(48, 50);
-            this.richTextBox2.TabIndex = 4;
-            this.richTextBox2.Text = "";
+            this.txtcoeff2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
+            this.txtcoeff2.Location = new System.Drawing.Point(522, 195);
+            this.txtcoeff2.MaxLength = 1;
+            this.txtcoeff2.Name = "txtcoeff2";
+            this.txtcoeff2.Size = new System.Drawing.Size(48, 50);
+            this.txtcoeff2.TabIndex = 4;
+            this.txtcoeff2.Text = "";
             // 
-            // richTextBox3
+            // txtcoeff1
             // 
-            this.richTextBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
-            this.richTextBox3.Location = new System.Drawing.Point(193, 194);
-            this.richTextBox3.MaxLength = 1;
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(48, 47);
-            this.richTextBox3.TabIndex = 5;
-            this.richTextBox3.Text = "";
+            this.txtcoeff1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
+            this.txtcoeff1.Location = new System.Drawing.Point(193, 194);
+            this.txtcoeff1.MaxLength = 1;
+            this.txtcoeff1.Name = "txtcoeff1";
+            this.txtcoeff1.Size = new System.Drawing.Size(48, 47);
+            this.txtcoeff1.TabIndex = 5;
+            this.txtcoeff1.Text = "";
             // 
             // label1
             // 
@@ -157,15 +157,15 @@
             this.comboBox2.Size = new System.Drawing.Size(59, 33);
             this.comboBox2.TabIndex = 7;
             // 
-            // richTextBox4
+            // txtconst2
             // 
-            this.richTextBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
-            this.richTextBox4.Location = new System.Drawing.Point(699, 195);
-            this.richTextBox4.MaxLength = 2;
-            this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.Size = new System.Drawing.Size(48, 50);
-            this.richTextBox4.TabIndex = 3;
-            this.richTextBox4.Text = "";
+            this.txtconst2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
+            this.txtconst2.Location = new System.Drawing.Point(699, 195);
+            this.txtconst2.MaxLength = 2;
+            this.txtconst2.Name = "txtconst2";
+            this.txtconst2.Size = new System.Drawing.Size(48, 50);
+            this.txtconst2.TabIndex = 3;
+            this.txtconst2.Text = "";
             // 
             // label3
             // 
@@ -207,14 +207,14 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.ClientSize = new System.Drawing.Size(941, 450);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.richTextBox4);
+            this.Controls.Add(this.txtconst2);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.richTextBox3);
-            this.Controls.Add(this.richTextBox2);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.txtcoeff1);
+            this.Controls.Add(this.txtcoeff2);
+            this.Controls.Add(this.txtconst1);
             this.Controls.Add(this.btnExpand);
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.lblTitle);
@@ -233,14 +233,14 @@
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Button btnMenu;
         private System.Windows.Forms.Button btnExpand;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.RichTextBox richTextBox3;
+        private System.Windows.Forms.RichTextBox txtconst1;
+        private System.Windows.Forms.RichTextBox txtcoeff2;
+        private System.Windows.Forms.RichTextBox txtcoeff1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.RichTextBox richTextBox4;
+        private System.Windows.Forms.RichTextBox txtconst2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
