@@ -46,20 +46,22 @@ namespace Maths_Toolkit
                 int _coeff2 = Convert.ToInt16(txtcoeff2.Text);
                 int _const2 = Convert.ToInt16(txtconst2.Text);
 
-                //last edit, add operation functionality
+                MessageBox.Show(Expand(_coeff1, _const1, _coeff2, _const2));
             }
         }
         
         public static string Expand(int coeff1, int const1, int coeff2, int const2)
         {
-            int coeffxsqr;
-            int coeffx;
-            int constant;
+            string coeffxsqr;
+            string coeffx;
+            string constant;
 
-            coeffxsqr = coeff1 * coeff2;
-            //last edit
+            coeffxsqr = Convert.ToString(coeff1 * coeff2);
+            coeffx = Convert.ToString(coeff1 * const2 + coeff2 * const1);
+            constant = Convert.ToString(const1 * const2);
 
-            return "";
+            string finalstr = $"{coeffxsqr}x^2 + {coeffx}x + {constant}";
+            return finalstr;
         }
     }
 }
