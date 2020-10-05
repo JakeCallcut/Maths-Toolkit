@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,6 +11,7 @@ namespace Maths_Toolkit
 {
     public partial class BracketExpander : Form
     {
+
         public BracketExpander()
         {
             InitializeComponent();
@@ -46,11 +48,26 @@ namespace Maths_Toolkit
                 int _coeff2 = Convert.ToInt16(txtcoeff2.Text);
                 int _const2 = Convert.ToInt16(txtconst2.Text);
 
-                MessageBox.Show(Expand(_coeff1, _const1, _coeff2, _const2));
+                char _sign1 = '+';
+                char _sign2 = '+';
+
+                if (cmbSign1.SelectedIndex == 1)
+                {
+                    _const1 = _const1 - _const1 * 2;        //flip sign
+                    _sign1 = '-';
+                }
+
+                if (cmbSign2.SelectedIndex == 1)
+                {
+                    _const2 = _const2 - _const2 * 2;        //flip sign     
+                    _sign2 = '-';
+                }
+
+                MessageBox.Show(Expand(_coeff1, _const1, _coeff2, _const2, _sign1, _sign2));
             }
         }
         
-        public static string Expand(int coeff1, int const1, int coeff2, int const2)
+        public static string Expand(int coeff1, int const1, int coeff2, int const2, char sign1, char sign2)
         {
             string coeffxsqr;
             string coeffx;
@@ -60,7 +77,12 @@ namespace Maths_Toolkit
             coeffx = Convert.ToString(coeff1 * const2 + coeff2 * const1);
             constant = Convert.ToString(const1 * const2);
 
-            string finalstr = $"{coeffxsqr}x^2 + {coeffx}x + {constant}";
+            if (sign1 == '-')
+            {
+                //last edit, sign work
+            }
+
+            string finalstr = $"{coeffxsqr}x^2 {sign1} {coeffx}x {sign2} {constant}";
             return finalstr;
         }
     }

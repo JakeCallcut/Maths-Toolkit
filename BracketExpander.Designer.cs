@@ -36,9 +36,9 @@
             this.txtcoeff2 = new System.Windows.Forms.RichTextBox();
             this.txtcoeff1 = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbSign1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmbSign2 = new System.Windows.Forms.ComboBox();
             this.txtconst2 = new System.Windows.Forms.RichTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -106,7 +106,9 @@
             // txtcoeff1
             // 
             this.txtcoeff1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
-            this.txtcoeff1.Location = new System.Drawing.Point(193, 194);
+            this.txtcoeff1.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtcoeff1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtcoeff1.Location = new System.Drawing.Point(203, 194);
             this.txtcoeff1.MaxLength = 1;
             this.txtcoeff1.Name = "txtcoeff1";
             this.txtcoeff1.Size = new System.Drawing.Size(48, 47);
@@ -118,22 +120,22 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 28F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(247, 178);
+            this.label1.Location = new System.Drawing.Point(257, 178);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 67);
             this.label1.TabIndex = 6;
             this.label1.Text = "x";
             // 
-            // comboBox1
+            // cmbSign1
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbSign1.FormattingEnabled = true;
+            this.cmbSign1.Items.AddRange(new object[] {
             "+",
             "-"});
-            this.comboBox1.Location = new System.Drawing.Point(312, 201);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(59, 33);
-            this.comboBox1.TabIndex = 7;
+            this.cmbSign1.Location = new System.Drawing.Point(316, 206);
+            this.cmbSign1.Name = "cmbSign1";
+            this.cmbSign1.Size = new System.Drawing.Size(59, 33);
+            this.cmbSign1.TabIndex = 7;
             // 
             // label2
             // 
@@ -146,16 +148,16 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "x";
             // 
-            // comboBox2
+            // cmbSign2
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cmbSign2.FormattingEnabled = true;
+            this.cmbSign2.Items.AddRange(new object[] {
             "+",
             "-"});
-            this.comboBox2.Location = new System.Drawing.Point(634, 205);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(59, 33);
-            this.comboBox2.TabIndex = 7;
+            this.cmbSign2.Location = new System.Drawing.Point(634, 206);
+            this.cmbSign2.Name = "cmbSign2";
+            this.cmbSign2.Size = new System.Drawing.Size(59, 33);
+            this.cmbSign2.TabIndex = 7;
             // 
             // txtconst2
             // 
@@ -172,7 +174,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Consolas", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label3.Location = new System.Drawing.Point(140, 178);
+            this.label3.Location = new System.Drawing.Point(145, 178);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 70);
             this.label3.TabIndex = 8;
@@ -208,9 +210,9 @@
             this.ClientSize = new System.Drawing.Size(941, 450);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtconst2);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cmbSign2);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbSign1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtcoeff1);
             this.Controls.Add(this.txtcoeff2);
@@ -238,9 +240,9 @@
         private System.Windows.Forms.RichTextBox txtcoeff2;
         private System.Windows.Forms.RichTextBox txtcoeff1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbSign1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmbSign2;
         private System.Windows.Forms.RichTextBox txtconst2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
