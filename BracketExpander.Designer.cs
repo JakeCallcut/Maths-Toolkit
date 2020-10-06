@@ -86,6 +86,7 @@
             // txtconst1
             // 
             this.txtconst1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
+            this.txtconst1.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtconst1.Location = new System.Drawing.Point(390, 191);
             this.txtconst1.MaxLength = 2;
             this.txtconst1.Name = "txtconst1";
@@ -96,6 +97,7 @@
             // txtcoeff2
             // 
             this.txtcoeff2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
+            this.txtcoeff2.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtcoeff2.Location = new System.Drawing.Point(522, 195);
             this.txtcoeff2.MaxLength = 1;
             this.txtcoeff2.Name = "txtcoeff2";
@@ -162,6 +164,7 @@
             // txtconst2
             // 
             this.txtconst2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
+            this.txtconst2.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtconst2.Location = new System.Drawing.Point(699, 195);
             this.txtconst2.MaxLength = 2;
             this.txtconst2.Name = "txtconst2";

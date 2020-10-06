@@ -23,7 +23,7 @@ namespace Maths_Toolkit
             _menu.Show();
             this.Close();
         }
-
+        
         private void btnExpand_Click(object sender, EventArgs e)
         {
             bool working = true;
@@ -51,19 +51,34 @@ namespace Maths_Toolkit
                 char _sign1 = '+';
                 char _sign2 = '+';
 
-                if (cmbSign1.SelectedIndex == 1)
-                {
-                    _const1 = _const1 - _const1 * 2;        //flip sign
-                    _sign1 = '-';
-                }
+                    if (cmbSign1.SelectedIndex == 1)
+                    {
+                        _const1 = _const1 - _const1 * 2;        //flip sign
+                        _sign1 = '-';
+                    }
+                    else if (cmbSign1.SelectedIndex == 0){ }
+                    else
+                    {
+                        MessageBox.Show("Please select a sign to apply to the constant");
+                        working = false;
+                    }
 
-                if (cmbSign2.SelectedIndex == 1)
-                {
-                    _const2 = _const2 - _const2 * 2;        //flip sign     
-                    _sign2 = '-';
-                }
+                    if (cmbSign2.SelectedIndex == 1)
+                    {
+                        _const2 = _const2 - _const2 * 2;        //flip sign     
+                        _sign2 = '-';
+                    }
+                    else if (cmbSign1.SelectedIndex == 0){ }
+                    else
+                    {
+                        MessageBox.Show("Please select a sign to apply to the constant");
+                        working = false;
+                    }
 
-                MessageBox.Show(Expand(_coeff1, _const1, _coeff2, _const2, _sign1, _sign2));
+                if (working == true)
+                {
+                    MessageBox.Show(Expand(_coeff1, _const1, _coeff2, _const2, _sign1, _sign2), "Solution", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
             }
         }
         
@@ -72,17 +87,35 @@ namespace Maths_Toolkit
             string coeffxsqr;
             string coeffx;
             string constant;
+            string finalstr;
 
             coeffxsqr = Convert.ToString(coeff1 * coeff2);
             coeffx = Convert.ToString(coeff1 * const2 + coeff2 * const1);
             constant = Convert.ToString(const1 * const2);
 
-            if (sign1 == '-')
-            {
-                //last edit, sign work
-            }
-
-            string finalstr = $"{coeffxsqr}x^2 {sign1} {coeffx}x {sign2} {constant}";
+                if(Convert.ToInt16(coeffx) < 0)
+                {
+                    if (Convert.ToInt16(constant) < 0)
+                    {
+                        finalstr = $"{coeffxsqr}x^2 {coeffx}x {constant}";
+                    }
+                    else
+                    {
+                        finalstr = $"{coeffxsqr}x^2 {coeffx}x + {constant}";
+                    }
+                }
+                else
+                {
+                    if (Convert.ToInt16(constant) < 0)
+                    {
+                        finalstr = $"{coeffxsqr}x^2 + {coeffx}x {constant}";
+                    }
+                    else
+                    {
+                        finalstr = $"{coeffxsqr}x^2 + {coeffx}x + {constant}";
+                    }
+                }
+            
             return finalstr;
         }
     }
