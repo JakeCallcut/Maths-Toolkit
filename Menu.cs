@@ -33,7 +33,14 @@ namespace Maths_Toolkit
         {
             var _bracketExpander = new BracketExpander();
             _bracketExpander.Show();
-            this.Hide();
+            this.Close();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var _options = new Options();
+            _options.Show();
+            this.Close();
         }
     }
 }

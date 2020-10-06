@@ -14,5 +14,10 @@ namespace Maths_Toolkit
         {
             InitializeComponent();
         }
+
+        private void grpTheme_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
