@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
 
 namespace Maths_Toolkit
 {
@@ -32,13 +34,15 @@ namespace Maths_Toolkit
         private void button1_Click(object sender, EventArgs e)
         {
             var _bracketExpander = new BracketExpander();
+            FileManager.ApplyOption("THEME");
             _bracketExpander.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void button4_Click(object sender, EventArgs e)
         { 
             var _options = new Options();
+            FileManager.ApplyOption("THEME");
             _options.Show();
             this.Hide();
         }

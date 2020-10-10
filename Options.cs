@@ -26,13 +26,18 @@ namespace Maths_Toolkit
         {
             if (rdbLight.Checked == true)
             {
-                FileManager.ChangeOption("theme", 2);
+                FileManager.ChangeOption("THEME", 2);
+            }
+            else if (rdbDark.Checked == true)
+            {
+                FileManager.ChangeOption("THEME", 1);
             }
         }
 
         private void btnBack_Click(object sender, EventArgs e)
         {
             var _menu = new Menu();
+            FileManager.ApplyOption("Theme");
             _menu.Show();
             this.Close();
         }

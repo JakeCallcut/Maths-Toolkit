@@ -20,6 +20,7 @@ namespace Maths_Toolkit
         private void btnMenu_Click(object sender, EventArgs e)
         {
             var _menu = new Menu();
+            FileManager.ApplyOption("THEME");
             _menu.Show();
             this.Close();
         }

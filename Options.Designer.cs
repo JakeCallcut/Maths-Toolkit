@@ -88,9 +88,9 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(169, 385);
+            this.btnSave.Location = new System.Drawing.Point(169, 337);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(112, 34);
+            this.btnSave.Size = new System.Drawing.Size(149, 82);
             this.btnSave.TabIndex = 2;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
