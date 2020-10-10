@@ -37,10 +37,10 @@ namespace Maths_Toolkit
         }
 
         private void button4_Click(object sender, EventArgs e)
-        {
+        { 
             var _options = new Options();
             _options.Show();
-            this.Close();
+            this.Hide();
         }
     }
 }
