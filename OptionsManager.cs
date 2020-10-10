@@ -11,14 +11,9 @@ using System.Runtime.CompilerServices;
 
 namespace Maths_Toolkit
 {
-    class FileManager
+    class OptionsManager
     {
         readonly static string filePath = @"G:\Programming\C#\Maths-Toolkit\Dependencies\Options.txt";          //change to relative 
-
-        static void Main(string[] args)
-        {
-            ApplyOption();
-        }
 
         public static void ChangeOption(string option, int index)
         {
@@ -64,13 +59,17 @@ namespace Maths_Toolkit
                     }
                     if (s.ToUpper() == "LIGHT")
                     {
-                        Menu.ActiveForm.BackColor = Color.FromArgb(255, 232, 232);                      //
-                        BracketExpander.ActiveForm.BackColor = Color.FromArgb(255, 232, 232);           //last edit, broken
-                        Options.ActiveForm.BackColor = Color.FromArgb(255, 232, 232);                   //
+                        Menu.ActiveForm.BackColor = Color.FromArgb(244, 244, 244);            
+                        BracketExpander.ActiveForm.BackColor = Color.FromArgb(244, 244, 244);          //white-ish
+                        Options.ActiveForm.BackColor = Color.FromArgb(244, 244, 244);         
+
+                        Menu.ActiveForm.
                     }
                     else if (s.ToUpper() == "DARK")
                     {
-
+                        Menu.ActiveForm.BackColor = Color.FromArgb(68, 68, 68);
+                        BracketExpander.ActiveForm.BackColor = Color.FromArgb(68, 68, 68);              //gray
+                        Options.ActiveForm.BackColor = Color.FromArgb(68, 68, 68);
                     }
                 }
             }

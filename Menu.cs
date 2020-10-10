@@ -34,17 +34,22 @@ namespace Maths_Toolkit
         private void button1_Click(object sender, EventArgs e)
         {
             var _bracketExpander = new BracketExpander();
-            FileManager.ApplyOption("THEME");
             _bracketExpander.Show();
+            OptionsManager.ApplyOption("THEME");
             this.Hide();
         }
 
         private void button4_Click(object sender, EventArgs e)
         { 
             var _options = new Options();
-            FileManager.ApplyOption("THEME");
-            _options.Show();
+            _options.Show();                            
+            OptionsManager.ApplyOption("THEME");
             this.Hide();
+        }
+
+        private void btnTheme_Click(object sender, EventArgs e)
+        {
+            OptionsManager.ApplyOption("theme");
         }
     }
 }
